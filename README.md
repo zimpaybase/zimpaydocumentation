@@ -1,4 +1,4 @@
-##ZimPay Documentation: Pull Requests
+#ZimPay Documentation: Pull Requests
 Introduction
 This documentation provides an overview of how Pull Requests (PRs) work in the collaborative project called ZimPay. ZimPay is a project where we use Slack for communication and collaboration. We follow a specific naming convention for branches related to features and bugs.
 
