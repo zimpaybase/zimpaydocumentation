@@ -61,6 +61,28 @@ Please refer to the ZimPay Contribution Guidelines for more details on our colla
 For any further questions or assistance, feel free to reach out to the team on Slack or consult with the project maintainers. Happy coding!
 
 
+## ZimPay Documentation: Rebasing and Conflict Management
+
+# What causes a conflict
+A conflict arises when two or more contributors make conflicting changes to the same section of a codebase. For example, if Developer A modifies a function in a file and commits the changes, while Developer B also modifies the same function in their separate branch and tries to merge it, a conflict will occur. The version control system cannot automatically determine whose changes should take precedence, requiring manual intervention to resolve the conflicting modifications.
+
+# Mitigation
+To keep the branch up to date with the latest changes from the target branch, you can use the Git rebase command. This helps in resolving conflicts early and maintaining a clean commit history. Here is an example workflow:
+
+```bash
+git checkout feature/#ticketid
+git fetch origin
+git rebase origin/main
+```
+
+During the rebase process, if conflicts occur, Git will pause the process and highlight the conflicting files. You need to manually resolve conflicts by modifying the affected files, following Git's conflict resolution indicators.
+
+After resolving conflicts, stage the changes with git add and continue the rebase using git rebase --continue.
+
+If you encounter any difficulties in resolving conflicts, don't hesitate to seek help from your team or project maintainers.
+
+
+
 
 
 
